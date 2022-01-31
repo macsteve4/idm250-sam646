@@ -1,0 +1,460 @@
+/* Items below concern the management and use of fonts. */
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Regular.woff2') format('woff2'),
+        url('fonts/Lato-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Quattrocento Sans';
+    src: url('fonts/QuattrocentoSans.woff2') format('woff2'),
+        url('fonts/QuattrocentoSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /*items in this area follow universial scaling/ non-specific media rules.*/
+  
+  html {
+  font-size: 100%;
+  }
+  
+  /* Formatting for site elements to ensure consistency. */
+  * {
+    margin: 0;
+        margin-right: 0px;
+        margin-left: 0px;
+    padding: 0;
+  }
+  /* Below directs the behavior of the site's logo as well as its background. */
+  .logo_art { 
+      background-color: #ffffff;
+      display: block;
+    margin: 1.5rem;
+    text-align: left;
+    }
+  /* This section is concerned with the colors of nav text when interacted with. */
+    a:link {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      letter-spacing: .1rem;
+  
+    }
+  
+    a:visited {
+      color: black;
+      text-decoration: none;
+      letter-spacing: .1rem;
+  
+    }
+  
+    a:hover {
+      color: darkgrey;
+      text-decoration: none;
+      letter-spacing: .1rem;
+  
+    }
+  
+    a:active {
+      color: rgb(42, 42, 75);
+      text-decoration: none;
+      letter-spacing: .1rem;
+  
+    }
+  /* This follows the attribution of Lato to the nav items, and their placement. */
+    li {
+      font-family: Lato;
+      display: inline;
+  
+    }
+  
+    li a {
+      font-family: Lato;
+      display: inline;
+      padding: 18px;
+  
+    }
+  /* Standarized scaling and formatting for the site's images. */
+    img {
+      max-width: 100%;
+      height: auto;
+        display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+  .works {
+      background-color: rgb(240, 240, 240);
+      padding: 20px
+  }
+  /* This section is for placement and fonts of the welcome text on the index. */
+  .container {
+    font-family: Lato;
+    font-size: 21px;
+    position: relative;
+    text-align: left;
+    color: white;
+    background-color: black;
+  }
+  
+  /* Sections follow content layout for projects. */
+  .worksalt{
+    background-color: rgb(240, 240, 240);
+  }
+  
+  /* The grid for my artwork. */
+  .workcontainer {
+      display: grid;
+  }
+  
+  /* The flexbox for my about page. */
+  .aboutflex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  
+  .projects {
+    border-width: 0em;
+  margin: auto;
+  max-width: 600px;
+  bottom: 0;
+  }
+  /* Margins for regular art images. */
+  .physwork {
+    margin: 2rem auto;
+    }
+  
+  /* Content padding specifically for projects. */
+  .projectwork {
+    margin: 2rem auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    }
+  
+  
+  .ul {
+    text-align: center;
+  }
+  /* Concerns the fonts and placement of the whole navbar. Some content may be filtered. */
+  .site_menu {
+      list-style-type: none;
+      font-family: Lato;
+      font-size: 16px;
+    color: rgb(26, 26, 26);
+    text-align: center;
+    padding-bottom: 24px;
+    position: sticky;
+  }
+  
+  .menu-main-container {
+    list-style-type: none;
+    font-family: Lato;
+    font-size: 16px;
+  color: rgb(26, 26, 26);
+  text-align: center;
+  padding-bottom: 24px;
+  position: sticky;
+}
+
+  p.about {
+    font-family: "Quattrocento Sans";
+    font-size: 1.15rem;
+    max-width: 600px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  /* Media rule for screens under 1000px, this includes most mobile based systems whether portait tablets or phones */
+  
+  @media screen and (max-width: 999px) {
+    h3 {
+      font-family: Lato;
+      font-size: 29px;
+      padding-top: 1.6rem;
+      padding-left: 2rem;
+      padding-bottom: 1rem;
+    }
+  
+    .pointeru {
+      margin-left: 30rem;
+      margin-top: .5rem;
+      margin-bottom: -4rem;
+      width: 7%;
+    }
+    
+    .about_me {
+      border-width: 0em;
+      background-color: #dff3ff;
+      margin: auto;
+      max-width: 540px;
+      bottom: 0;
+  }
+  
+  .pointer {
+    height: 0%;
+    width: 0%;
+  }
+  
+  .centered {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgba(105, 24, 105, 0.534);
+    padding: 1rem;
+    max-width: 300px;
+  }
+  
+  p.top {
+    font-family: "Quattrocento Sans";
+    font-size: 1.15rem;
+    max-width: 536px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  h2.hi {
+    color: #000;
+    padding-bottom: 0.5rem;
+  }
+  
+  p.hey {
+    color: #000;
+    padding-left: 0em;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    max-width: 999px;
+  }
+  
+  .me { 
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+  }
+  
+  }
+  
+  
+  /* Placeable adherences for my about me page. */
+  
+  p {
+    font-family: "Quattrocento Sans";
+    font-size: 1.15rem;
+    max-width: 536px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  /* Guides for my linked footer content. */
+  .stevenlinka {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px;
+  height: 19px;
+  width: 26px;
+  }
+  
+  .stevenlinkb {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px;
+  height: 20px;
+  width: 20px;
+  }
+  
+  /* The formatting and scaling of the purple "top" button. */
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 35px;
+    z-index: 99;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgba(29, 29, 29, 0.795);
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.096), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+  /* Overall footer adherence. */
+  .bottom {
+      text-align: center;
+  }
+  
+  /* Media rule for 1000px up screens, (desktop and landscape tablets)*/
+  
+  @media screen and (min-width: 1000px) {
+    h3 {
+      font-family: Lato;
+      font-size: 39px;
+      padding-top: 1.6rem;
+      padding-left: 2rem;
+      padding-bottom: 1.5rem;
+    }
+  
+    .about_me {
+      border-width: 0em;
+      background-color: #dff3ff;
+      margin: auto;
+      max-width: 800px;
+      bottom: 0;
+  }
+  
+  p.about {
+    font-family: "Quattrocento Sans";
+    font-size: 1.25rem;
+    max-width: 600px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 0.2rem;
+  }
+  
+  .artgrid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: "main main . sidebar";
+    margin: 3rem auto;
+    justify-content: center;
+    max-width: 1343px;
+    background: url(imagesscaled/artbg.svg);
+    background-repeat: no-repeat;
+  }
+  
+  .opener {
+    max-width: 400px;
+  }
+  
+  p.top {
+    font-family: "Quattrocento Sans";
+    font-size: 1.35rem;
+    max-width: 536px;
+    padding-left: 0rem;
+    padding-right: 2rem;
+    margin-left: -1rem;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.3rem;
+    justify-items: center;
+    align-items: center;
+    max-width: 900px;
+    text-shadow: 10px 10px 20px #a0a0a0
+  }
+  
+  aside {
+    grid-area: sidebar;
+    max-width: 300px;
+    margin-left: 1em;
+  }
+  
+  h2.hi {
+    color: #000;
+    padding-bottom: 0.5rem;
+    font-size: 3.5rem;
+    margin-bottom: .7rem;
+  }
+  
+  p.hey {
+    color: #000;
+    padding-left: 0em;
+    font-size: 1.4rem;
+  }
+  
+  .centered {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-style: solid;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 0.9);
+    border-width: 10px;
+    border-color: rgba(105, 24, 105, 0.534);
+    padding: 1rem;
+    max-width: 450px;
+  }
+  
+  .me { 
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .pointer {
+    height: 50%;
+    width: 50%;
+    margin-right: 2rem;
+  }
+  
+  .pointeru {
+    width: 0%;
+  }
+  
+  }
+  
+  /* Media rule for arrow property for screens under px, this includes most mobile based systems, had to put out of order because of how CSS processes rules*/
+  
+  @media screen and (max-width: 620px) {
+    .pointeru {
+      width: 0%;
+      margin-bottom: 0rem;
+    }
+  }
+  
+  /*media rule for systems at 1300px & up, or wide monior/high res. */
+  
+  @media screen and (min-width: 1300px) {
+    h2.hi {
+      color: #000;
+      padding-bottom: 0.5rem;
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+    
+    p.hey {
+      color: #000;
+      padding-left: 0em;
+      font-size: 1.6rem;
+    }
+  
+    .centered {
+      max-width: 500px;
+    }
+  
+  }
+  
+  @media screen and (min-width: 1324px) {
+    aside {
+      grid-area: sidebar;
+      max-width: 300px;
+      margin-left: 5em;
+    }
+  }
