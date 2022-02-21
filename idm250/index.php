@@ -1,3 +1,3 @@
 <?php get_header(); ?>
-Im ready, Im ready! Im ready, Im ready! Im ready, Im ready! Im ready, Im ready! Im ready, Im ready! Im ready, Im ready! Im ready, Im ready! Im ready, Im ready! Im ready, Im ready!
+This is the index. All pages will fallback to this page.
 <?php get_footer(); ?>

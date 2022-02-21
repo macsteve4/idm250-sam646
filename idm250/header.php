@@ -14,8 +14,8 @@ wp_head();
 
 <div class="logo_art">
             <h1>
-              <a href="index.html">
-                  <img alt="Centered logo of yellow pencil on white paper with purple swirl behind it." src="http://localhost:8888/wp-content/uploads/2022/01/logo4.png" width="72" height="72">
+              <a href="https://mcinerneymedia.com/idm250/">
+                  <img alt="Centered logo of yellow pencil on white paper with purple swirl behind it." src="https://mcinerneymedia.com/idm250/wp-content/uploads/2022/02/logo4.png" width="72" height="72">
                 </a>
           </h1>
         </div>
