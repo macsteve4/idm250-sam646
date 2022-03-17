@@ -37,6 +37,12 @@
     margin: 1.5rem;
     text-align: left;
     }
+
+    img.logohead {
+      width: 93px; 
+      height: 50px;
+    }
+
   /* This section is concerned with the colors of nav text when interacted with. */
     a:link {
       color: rgb(0, 0, 0);
@@ -97,17 +103,116 @@
     font-size: 21px;
     position: relative;
     text-align: left;
-    color: white;
-    background-color: black;
+    color: rgb(27, 27, 27);
   }
   
+  /* Work Page */
+  
+  #gallery {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .gallery_card {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    margin: 1rem;
+    box-shadow: 1px 2px 40px 2px rgba(160, 160, 160, 0.5);
+  }
+  .gallery_imagecaption {
+    margin-top: 0.25rem;
+    font-size: 0.95rem;
+  }
+  .gallery_image {
+    width: 100%;
+    display: block;
+  }
+
+  .largecontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.workcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 2rem;
+    margin: 2rem;
+    max-width: 994px;
+  }
+  
+  * {
+    font-family: "Poppins", sans-serif;
+  }
+  .workcard {
+    height: 215px;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  
+  h3.worktitle {
+    color: white;
+    font-size: 24px;
+    margin: 20px 50px 0 20px;
+  
+  }
+  
+  h2.workdesc {
+    color: white;
+    font-size: 18px;
+    margin: 20px 0 0 20px;
+  
+  }
+  
+  p.workcategory {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    align-self: end;
+    margin: 0 0 20px 20px;
+    letter-spacing: 0.5px;
+  }
+  
+  img.work {
+    position: absolute;
+    top: 0;
+    height: 110%;
+    width: 100%;
+    z-index: -1;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  
+  img.main {
+    filter: brightness(85%);
+  }
+
+  .workcard:hover {
+    transform: scale(1.035, 1.035);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  .workcard:hover img {
+    transform: translateY(-10px);
+  }
+
   /* Sections follow content layout for projects. */
   .worksalt{
     background-color: rgb(240, 240, 240);
   }
   
   /* The grid for my artwork. */
-  .workcontainer {
+  .artcontainer {
       display: grid;
   }
   
@@ -150,6 +255,16 @@
     padding-bottom: 24px;
     position: sticky;
   }
+
+  .menu {
+    list-style-type: none;
+    font-family: Lato;
+    font-size: 16px;
+  color: rgb(26, 26, 26);
+  text-align: center;
+  padding-bottom: 24px;
+  position: sticky;
+}
   
   .menu-main-container {
     list-style-type: none;
@@ -157,7 +272,6 @@
     font-size: 16px;
   color: rgb(26, 26, 26);
   text-align: center;
-  padding-bottom: 24px;
   position: sticky;
 }
 
@@ -199,7 +313,19 @@
     height: 0%;
     width: 0%;
   }
+
+  .error {
+    position: relative;
+  text-align: center;
+  }
   
+  .errorcentered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .centered {
     position: fixed;
     top: 40%;
@@ -231,7 +357,7 @@
     padding-left: 0em;
   }
   
-  .gallery {
+  .gallery_art {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 2rem;
@@ -357,7 +483,7 @@
     margin-left: -1rem;
   }
   
-  .gallery {
+  .gallery_art {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.3rem;
@@ -376,7 +502,7 @@
   h2.hi {
     color: #000;
     padding-bottom: 0.5rem;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin-bottom: .7rem;
   }
   
@@ -419,6 +545,25 @@
   }
   
   }
+
+  /* Responsive Project Gallery */
+@media only screen and (min-width: 320px) {
+  .gallery_card {
+    flex-basis: calc(50% - 2rem);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .gallery_card {
+    flex-basis: calc((100% / 3) - 2rem);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .gallery_card {
+    flex-basis: calc((100% / 4) - 2rem);
+  }
+}
   
   /* Media rule for arrow property for screens under px, this includes most mobile based systems, had to put out of order because of how CSS processes rules*/
   
@@ -435,7 +580,7 @@
     h2.hi {
       color: #000;
       padding-bottom: 0.5rem;
-      font-size: 4rem;
+      font-size: 2.5  rem;
       margin-bottom: 1rem;
     }
     
