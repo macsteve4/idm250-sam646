@@ -10,6 +10,10 @@
     <?php the_content(); ?>
 </div>
 </div>
+<aside>
+    <p><?php echo get_field('project_group'); ?>
+    </p>
+  </aside>
 <?php endwhile; ?>
 
 <?php get_footer(); ?>

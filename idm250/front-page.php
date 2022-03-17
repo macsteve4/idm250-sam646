@@ -4,28 +4,13 @@
           <picture>
             <source media="(max-width: 600px)" srcset="http://localhost:8888/wp-content/uploads/2022/02/bg_s.png">
             <source media="(max-width: 1020px)" srcset="http://localhost:8888/wp-content/uploads/2022/02/bg_m.png">
-            <source media="(min-width: 1021px)" srcset="http://localhost:8888/wp-content/uploads/2022/02/bg_l.png">
-            <img src="http://localhost:8888/wp-content/uploads/2022/02/bg_s.png" alt="Gallery of Steven's work at an angle.">
+            <source media="(min-width: 1021px)" srcset="https://mcinerneymedia.com/idm250/wp-content/uploads/2022/02/new_bg_l_2.png">
+            <img class="main" src="https://mcinerneymedia.com/idm250/wp-content/uploads/2022/02/new_bg_l_2.png" alt="Gallery of Steven's work at an angle.">
           </picture>
           <div class="centered">
-            <h2 class="hi">Welcome!</h2>
-            <p class="hey">I'm <b>Steven</b>, and this is my website. Feel free to take a look around with the tabs up top.</p>
+            <h2 class="hi">Steven McInerney—</h2>
+            <p class="hey">Hi! I do <b>UI/UX design & digital marketing</b>, this is my website. Take a look around!</p>
 
           </div>
         </div>
-        <?php
-wp_footer();
-?>
-
-<div class="bottom">
-                <a href="mailto:sam646@drexel.edu">
-                  <img class="stevenlinka" alt="Small Envelope, a linked image directing to Steven's email." src="http://localhost:8888/wp-content/uploads/2022/01/mail.png">
-                  </a>
-                <a href="https://www.linkedin.com/in/steven-mcinerney-3b106819a/" target="_blank">
-                  <img class="stevenlinkb" alt="IN Logo from Linkedin, a linked image directing to Steven's linkedin profile." src="http://localhost:8888/wp-content/uploads/2022/01/linkedin.png">
-                  </a>
-                </div>
-
-</body>
-
-</html>
+        <?php get_footer(); ?>
